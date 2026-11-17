@@ -1,0 +1,268 @@
+{
+  "ETTh1": {
+    "96": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 256,
+        "kernel_size": 7
+      },
+      "trial": 4,
+      "val_mse": 0.6837602314765721
+    },
+    "192": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 128,
+        "kernel_size": 7
+      },
+      "trial": 2,
+      "val_mse": 0.9946319804441183
+    },
+    "336": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 256,
+        "kernel_size": 7
+      },
+      "trial": 4,
+      "val_mse": 1.3001856653230275
+    },
+    "720": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 128,
+        "kernel_size": 5
+      },
+      "trial": 1,
+      "val_mse": 1.5808521804853966
+    }
+  },
+  "ETTh2": {
+    "96": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 128,
+        "kernel_size": 5
+      },
+      "trial": 1,
+      "val_mse": 0.21820376680702452
+    },
+    "192": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 256,
+        "kernel_size": 5
+      },
+      "trial": 3,
+      "val_mse": 0.28072929810688896
+    },
+    "336": {
+      "config": {
+        "learning_rate": 0.0005,
+        "d_model": 128,
+        "kernel_size": 5
+      },
+      "trial": 5,
+      "val_mse": 0.3651986668720014
+    },
+    "720": {
+      "config": {
+        "learning_rate": 0.0005,
+        "d_model": 128,
+        "kernel_size": 5
+      },
+      "trial": 5,
+      "val_mse": 0.5975189891489004
+    }
+  },
+  "ETTm1": {
+    "96": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 128,
+        "kernel_size": 7
+      },
+      "trial": 2,
+      "val_mse": 0.3834761839838555
+    },
+    "192": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 256,
+        "kernel_size": 7
+      },
+      "trial": 4,
+      "val_mse": 0.49734304109332866
+    },
+    "336": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 128,
+        "kernel_size": 7
+      },
+      "trial": 2,
+      "val_mse": 0.6376825056715273
+    },
+    "720": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 128,
+        "kernel_size": 7
+      },
+      "trial": 2,
+      "val_mse": 0.9431498139522897
+    }
+  },
+  "ETTm2": {
+    "96": {
+      "config": {
+        "learning_rate": 0.0005,
+        "d_model": 256,
+        "kernel_size": 5
+      },
+      "trial": 7,
+      "val_mse": 0.1289703632564669
+    },
+    "192": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 256,
+        "kernel_size": 5
+      },
+      "trial": 3,
+      "val_mse": 0.17777251283199647
+    },
+    "336": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 256,
+        "kernel_size": 7
+      },
+      "trial": 4,
+      "val_mse": 0.22382460151714093
+    },
+    "720": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 128,
+        "kernel_size": 7
+      },
+      "trial": 2,
+      "val_mse": 0.29469105188753153
+    }
+  },
+  "Weather": {
+    "96": {
+      "config": {
+        "learning_rate": 0.001,
+        "d_model": 128,
+        "kernel_size": 5
+      },
+      "trial": 9,
+      "val_mse": 0.39717551277153806
+    },
+    "192": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 128,
+        "kernel_size": 7
+      },
+      "trial": 2,
+      "val_mse": 0.46106598685686506
+    },
+    "336": {
+      "config": {
+        "learning_rate": 0.0001,
+        "d_model": 128,
+        "kernel_size": 5
+      },
+      "trial": 1,
+      "val_mse": 0.5399746710214582
+    },
+    "720": {
+      "config": {
+        "learning_rate": 0.001,
+        "d_model": 128,
+        "kernel_size": 5
+      },
+      "trial": 9,
+      "val_mse": 0.6490200112292359
+    }
+  },
+  "Electricity": {
+    "96": {
+      "config": {
+        "learning_rate": 0.001,
+        "d_model": 256,
+        "kernel_size": 7
+      },
+      "trial": 12,
+      "val_mse": 0.11648082246642749
+    },
+    "192": {
+      "config": {
+        "learning_rate": 0.001,
+        "d_model": 256,
+        "kernel_size": 7
+      },
+      "trial": 12,
+      "val_mse": 0.12989575001214104
+    },
+    "336": {
+      "config": {
+        "learning_rate": 0.001,
+        "d_model": 256,
+        "kernel_size": 5
+      },
+      "trial": 11,
+      "val_mse": 0.14690759618839888
+    },
+    "720": {
+      "config": {
+        "learning_rate": 0.001,
+        "d_model": 256,
+        "kernel_size": 5
+      },
+      "trial": 11,
+      "val_mse": 0.17595192367524062
+    }
+  },
+  "Traffic": {
+    "96": {
+      "config": {
+        "learning_rate": 0.001,
+        "d_model": 256,
+        "kernel_size": 5
+      },
+      "trial": 11,
+      "val_mse": 0.35646910480096444
+    },
+    "192": {
+      "config": {
+        "learning_rate": 0.001,
+        "d_model": 256,
+        "kernel_size": 7
+      },
+      "trial": 12,
+      "val_mse": 0.3597697813394631
+    },
+    "336": {
+      "config": {
+        "learning_rate": 0.001,
+        "d_model": 256,
+        "kernel_size": 5
+      },
+      "trial": 11,
+      "val_mse": 0.3770772966173142
+    },
+    "720": {
+      "config": {
+        "learning_rate": 0.001,
+        "d_model": 256,
+        "kernel_size": 5
+      },
+      "trial": 11,
+      "val_mse": 0.41167163481009467
+    }
+  }
+}

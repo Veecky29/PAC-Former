@@ -1,0 +1,62 @@
+[
+  {
+    "learning_rate": 0.0001,
+    "d_model": 128,
+    "kernel_size": 5
+  },
+  {
+    "learning_rate": 0.0001,
+    "d_model": 128,
+    "kernel_size": 7
+  },
+  {
+    "learning_rate": 0.0001,
+    "d_model": 256,
+    "kernel_size": 5
+  },
+  {
+    "learning_rate": 0.0001,
+    "d_model": 256,
+    "kernel_size": 7
+  },
+  {
+    "learning_rate": 0.0005,
+    "d_model": 128,
+    "kernel_size": 5
+  },
+  {
+    "learning_rate": 0.0005,
+    "d_model": 128,
+    "kernel_size": 7
+  },
+  {
+    "learning_rate": 0.0005,
+    "d_model": 256,
+    "kernel_size": 5
+  },
+  {
+    "learning_rate": 0.0005,
+    "d_model": 256,
+    "kernel_size": 7
+  },
+  {
+    "learning_rate": 0.001,
+    "d_model": 128,
+    "kernel_size": 5
+  },
+  {
+    "learning_rate": 0.001,
+    "d_model": 128,
+    "kernel_size": 7
+  },
+  {
+    "learning_rate": 0.001,
+    "d_model": 256,
+    "kernel_size": 5
+  },
+  {
+    "learning_rate": 0.001,
+    "d_model": 256,
+    "kernel_size": 7
+  }
+]

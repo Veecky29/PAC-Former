@@ -1,0 +1,66 @@
+{
+  "schedule": {
+    "name": "warmup_cosine",
+    "warmup_epochs": 1,
+    "start_ratio": 0.1,
+    "minimum_ratio": 0.01,
+    "planned_epochs": 50,
+    "unit": "optimizer_step"
+  },
+  "optimizer": {
+    "name": "Adam",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0
+  },
+  "gradient_clipping": false,
+  "fixed": {
+    "seq_len": 96,
+    "n_heads": 8,
+    "e_layers": 2,
+    "dropout": 0.1,
+    "d_scale": 16,
+    "batch_size": 32,
+    "max_epochs": 50,
+    "patience": 5
+  },
+  "main_seed": 2026,
+  "train_batch_drop_last": true,
+  "eval_batch_drop_last": false,
+  "deterministic_algorithms": true,
+  "matmul_allow_tf32": false,
+  "cudnn_allow_tf32": true,
+  "cublas_workspace_config": ":4096:8",
+  "model": "PACFormer",
+  "attention": "SCA",
+  "robustness_seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "python": "3.11.7",
+  "torch": "2.5.1+cu121",
+  "numpy": "1.26.4",
+  "cuda_runtime": "12.1",
+  "cudnn": 90100,
+  "precision": "float32",
+  "metric_accumulation": "float64",
+  "scaler": "StandardScaler",
+  "revin_affine": false,
+  "sca": {
+    "statistics_tanh": true,
+    "bias_bound": 3.0,
+    "coefficient": "tanh",
+    "coefficient_initial_value": 0.0,
+    "coefficient_scope": "layer"
+  },
+  "hardware": {
+    "gpu": "RTX 4090",
+    "cpu_threads_per_worker": 4,
+    "workers_non_traffic": 2,
+    "workers_traffic": 1
+  }
+}
