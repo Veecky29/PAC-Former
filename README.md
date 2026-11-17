@@ -207,7 +207,3 @@ If you find this work useful, please cite:
 ## Acknowledgements
 
 We thank the maintainers of [ETDataset](https://github.com/zhouhaoyi/ETDataset), [Time-Series-Library](https://github.com/thuml/Time-Series-Library), [iTransformer](https://github.com/thuml/iTransformer) and [RevIN](https://github.com/ts-kim/RevIN).
-
-## License
-
-The code is released under the MIT License (see `LICENSE`). The datasets are not covered by this license and remain under the terms of their original providers.
