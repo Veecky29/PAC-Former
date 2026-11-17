@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+outputs/
+data/benchmark/
+*.download
+*.pt
+*.pth
+*.ckpt
+PACFormer-models/
+PACFormer-models.zip
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
