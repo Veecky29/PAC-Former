@@ -39,7 +39,7 @@ class RevIN(nn.Module):
         x = x * self.stdev + self.mean
         return x
 
-class PhaseLagAlignmentModule(nn.Module):
+class PreTokenizationLocalFilter(nn.Module):
 
     def __init__(self, c_in, kernel_size=7, dilation=1):
         super().__init__()
@@ -50,7 +50,7 @@ class PhaseLagAlignmentModule(nn.Module):
     def forward(self, x_norm_c):
         return x_norm_c + self.act(self.dw_conv(x_norm_c))
 
-class ScaleConditionedAttention(nn.Module):
+class StatisticsConditionedAttention(nn.Module):
 
     def __init__(self, d_model, n_heads=8, dropout=0.1):
         super().__init__()
@@ -80,7 +80,7 @@ class TransformerEncoderBlock(nn.Module):
 
     def __init__(self, d_model, n_heads=8, d_ff=256, dropout=0.1):
         super().__init__()
-        self.attn = ScaleConditionedAttention(d_model, n_heads, dropout)
+        self.attn = StatisticsConditionedAttention(d_model, n_heads, dropout)
         self.norm1 = nn.LayerNorm(d_model)
         self.norm2 = nn.LayerNorm(d_model)
         self.ffn = nn.Sequential(nn.Linear(d_model, d_ff), nn.GELU(), nn.Dropout(dropout), nn.Linear(d_ff, d_model), nn.Dropout(dropout))
@@ -98,7 +98,7 @@ class PACFormer(nn.Module):
         self.seq_len = seq_len
         self.pred_len = pred_len
         self.revin = RevIN(num_features=c_in, affine=False)
-        self.plm = PhaseLagAlignmentModule(c_in=c_in, kernel_size=kernel_size)
+        self.plm = PreTokenizationLocalFilter(c_in=c_in, kernel_size=kernel_size)
         self.scale_mlp = nn.Sequential(nn.Linear(2, 32), nn.GELU(), nn.Linear(32, d_scale))
         self.d_scale = d_scale
         self.enc_embedding = nn.Linear(seq_len, d_model)
