@@ -207,3 +207,7 @@ If you find this work useful, please cite:
 ## Acknowledgements
 
 We thank the maintainers of [ETDataset](https://github.com/zhouhaoyi/ETDataset), [Time-Series-Library](https://github.com/thuml/Time-Series-Library), [iTransformer](https://github.com/thuml/iTransformer) and [RevIN](https://github.com/ts-kim/RevIN).
+
+## Contact
+
+If you have any questions, please feel free to contact: (wangtianwen522@gmail.com), (23051789@siswa.um.edu.my).
