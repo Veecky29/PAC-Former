@@ -210,4 +210,4 @@ We thank the maintainers of [ETDataset](https://github.com/zhouhaoyi/ETDataset),
 
 ## Contact
 
-If you have any questions, please feel free to contact: (wangtianwen522@gmail.com), (23051789@siswa.um.edu.my), or(631738925@qq.com).
+If you have any questions, please feel free to contact: (wangtianwen522@gmail.com), (23051789@siswa.um.edu.my), or (631738925@qq.com).
